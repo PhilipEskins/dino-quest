@@ -11,4 +11,4 @@
 </select><br>
 <h3>Enter your dino's name</h3>
   <input type="text" #dinoName><br>
-<button type="button" (click)="newDino(dinoDiet, dinoClass.value, dinoName.value)">Begin your Quest!</button>
+<button type="button" (click)="dinoService.newDino(dinoDiet, dinoClass.value, dinoName.value)" routerLink="/scenes">Begin your Quest!</button>
