@@ -1,0 +1,14 @@
+<h2>Select a class!</h2>
+
+<h3>Select your diet</h3>
+<input type="radio" [(ngModel)]="dinoDiet" name="dinoDiet" value="carnivore">Carnivore<br>
+<input type="radio" [(ngModel)]="dinoDiet" name="dinoDiet" value="herbivore">Herbivore
+<h3>Select your class</h3>
+<select #dinoClass>
+  <option value="P">thing1</option>
+  <option value="T">thing2</option>
+  <option value="W">thing3</option>
+</select><br>
+<h3>Enter your dino's name</h3>
+  <input type="text" #dinoName><br>
+<button type="button" (click)="newDino(dinoDiet, dinoClass.value, dinoName.value)">Begin your Quest!</button>
